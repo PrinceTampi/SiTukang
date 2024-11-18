@@ -1,3 +1,4 @@
+/* CSS Default */
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -17,15 +18,112 @@ body {
 
 /* Styling Logo di Navbar */
 .logo {
-    width: 30px; /* Atur ukuran logo */
-    height: 30px; /* Sesuaikan dengan teks */
-    object-fit: contain; /* Agar gambar tidak terpotong */
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
-/* Responsif untuk layar kecil */
+/* Responsif untuk tampilan mobile */
 @media (max-width: 768px) {
     .logo {
         width: 25px;
         height: 25px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background-color: transparent;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .card .display-4 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    form .form-control {
+        font-size: 0.9rem;
+    }
+
+    form .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+
+/* Desain baru untuk kategori layanan pada mobile */
+@media (max-width: 576px) {
+    #layanan .row, #vendor .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0.5rem; /* Spasi antar kotak */
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0.5rem; /* Mengurangi ukuran padding */
+    }
+
+    .card .display-4 {
+        font-size: 1.5rem; /* Ikon lebih kecil */
+    }
+
+    .card-title {
+        font-size: 0.8rem; /* Ukuran teks lebih kecil */
+    }
+
+    #kontak {
+        padding: 1rem 0.5rem; /* Kurangi padding atas dan bawah */
+    }
+}
+
+/* Penyesuaian spesifik untuk vendor */
+@media (max-width: 576px) {
+    #vendor .card {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #vendor .card .display-4 {
+        font-size: 1.4rem; /* Ikon vendor lebih kecil */
+    }
+
+    #vendor .card-title {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #vendor .card p {
+        font-size: 0.75rem; /* Ukuran teks deskripsi lebih kecil */
     }
 }

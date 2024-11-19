@@ -107,6 +107,18 @@ body {
     }
 }
 
+/* Ikon tambahan untuk kategori baru */
+.bi-building, .bi-rulers {
+    color: #007bff; /* Warna default ikon */
+    transition: color 0.3s ease-in-out;
+}
+
+.card:hover .bi-building, 
+.card:hover .bi-rulers {
+    color: #0056b3; /* Warna ikon saat hover */
+}
+
+
 /* Penyesuaian spesifik untuk vendor */
 @media (max-width: 576px) {
     #vendor .card {
@@ -118,7 +130,7 @@ body {
         font-size: 1.4rem; /* Ikon vendor lebih kecil */
     }
 
-    #vendor .card-title {
+    #vendor .cardcxds-title {
         font-size: 0.85rem;
         margin-bottom: 0.5rem;
     }
